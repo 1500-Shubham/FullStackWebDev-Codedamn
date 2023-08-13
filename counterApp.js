@@ -9,6 +9,15 @@ span.innerText=counter;
 //create Element
 var li=document.createElement('li');
 li.innerHTML="<b>Current Value:</b>"+counter;
+
+if(counter%2==0) // complete attribute wit class
+li.setAttribute('class','red');
+else{
+li.style.background='yellow';
+li.style.padding='10px';
+} 
+
+
 li.setAttribute('data-shubham',counter);
 ulList.appendChild(li);
 
